@@ -33,11 +33,11 @@ Robot Framework 5.0 (Python 3.9.2 on linux)
 
 ### Configuração do Emulador:
 
-1 - Instale e configure o Android Studio
-2 - Abra o Android Studio e crie um Dispositivo Virtual: "Pixel 4 API 30"
-3 - Rode o emulador do dispositivo criado
-4 - Instale o "app-debug.apk" da pasta "apk" arrastando-o para o emulador
-5 - Abra o app "Login"
+1 - Instale e configure o Android Studio  
+2 - Abra o Android Studio e crie um Dispositivo Virtual: "Pixel 4 API 30"  
+3 - Rode o emulador do dispositivo criado  
+4 - Instale o "app-debug.apk" da pasta "apk" arrastando-o para o emulador  
+5 - Abra o app "Login"  
 
 ### Verificando o nome da aplicação:
 
