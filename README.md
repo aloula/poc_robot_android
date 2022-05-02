@@ -46,3 +46,23 @@ $ adb shell
 generic_x86_arm:/ $ dumpsys window | grep -E 'mCurrentFocus'
   mCurrentFocus=Window{1204c85 u0 com.example.vamsi.login/com.example.vamsi.login.MainActivity}
 ```
+
+# Executndo os testes com Robot
+
+1 - Execute o Appium Server:
+```
+$ ./run-appium.sh
+```
+
+2 - Abra outro terminal para executar o Emulador:
+```
+$ ./run-emulador.sh
+```
+
+3 - Abra outro terminal e execute o teste:
+```
+$ source .venv/bin/activate
+$ robot -d logs testes/*
+```
+
+4 - Os relatórios são salvos na pasta <logs>

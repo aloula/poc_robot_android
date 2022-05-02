@@ -1,8 +1,7 @@
 # Configurações Android
 
 *** Settings ***
-Library   AppiumLibrary
-
+Library         AppiumLibrary
 
 
 *** Variables ***
@@ -28,6 +27,9 @@ ${TELEFONE}           11 91234-5678
 Abrir App
     Open Application    ${REMOTE_URL}   platformName=${platformName}  appium:platformVersion=${appium:platformVersion}  appium:deviceName=${appium:deviceName}  appium:automationName=${appium:automationName}   appium:appPackage=${appium:appPackage}  appium:appActivity=${appium:appActivity}  appium:newCommandTimeout=${appium:newCommandTimeout}
     
+Fechar App
+    Close Application
+
 Cadastrar Usuario
     Click Element    id=com.example.vamsi.login:id/tvRegister
     Wait Until Element Is Visible    id=com.example.vamsi.login:id/etRegName
@@ -38,12 +40,13 @@ Cadastrar Usuario
     Click Element    id=com.example.vamsi.login:id/btnRegLogin
     Input Text    id=com.example.vamsi.login:id/etRegPassword       ${SENHA_VALIDA} 
     Click Element    id=com.example.vamsi.login:id/btnRegLogin
-    Go Back
+    Hide Keyboard
     
 
 Login Usuario Valido
     Wait Until Element Is Visible  id=com.example.vamsi.login:id/btnGotoLogin
     Click Element    id=com.example.vamsi.login:id/btnGotoLogin
+    Wait Until Element Is Visible   id=com.example.vamsi.login:id/etLogGmail
     Input Text    id=com.example.vamsi.login:id/etLogGmail          ${EMAIL_VALIDO}
     Input Text    id=com.example.vamsi.login:id/etLoginPassword     ${SENHA_VALIDA}
     Click Element    id=com.example.vamsi.login:id/btnLogin
@@ -73,6 +76,4 @@ Login Invalido
     Input Text    id=com.example.vamsi.login:id/etLoginPassword     ${SENHA_INVALIDA}
     Click Element    id=com.example.vamsi.login:id/btnLogin
     #Wait Until Element Is Visible    xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.RelativeLayout/android.widget.TextView
-
-Fechar App
-    Close Application       
+       
