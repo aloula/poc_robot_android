@@ -65,4 +65,4 @@ $ source .venv/bin/activate
 $ robot -d logs testes/*
 ```
 
-4 - Os relatórios são salvos na pasta <logs>
+4 - Os relatórios são salvos na pasta "logs"  
