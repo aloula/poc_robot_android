@@ -24,6 +24,8 @@ $ source .venv/bin/activate
 
 3 - Instalar Robot Framework e lib do appium:
 ```
+$ pip install --upgrade pip
+$ pip install Appium-Python-Client
 $ pip install robotframework
 $ robot --version
 $ pip install --upgrade robotframework-appiumlibrary
@@ -34,7 +36,7 @@ Robot Framework 5.0 (Python 3.9.2 on linux)
 ### Configuração do Emulador:
 
 1 - Instale e configure o Android Studio  
-2 - Abra o Android Studio e crie um Dispositivo Virtual: "Pixel 4 API 30"  
+2 - Abra o Android Studio e crie um Dispositivo Virtual: "Pixel 4 API 33"  
 3 - Rode o emulador do dispositivo criado  
 4 - Instale o "app-debug.apk" da pasta "apk" arrastando-o para o emulador  
 5 - Abra o app "Login"  
@@ -47,7 +49,7 @@ generic_x86_arm:/ $ dumpsys window | grep -E 'mCurrentFocus'
   mCurrentFocus=Window{1204c85 u0 com.example.vamsi.login/com.example.vamsi.login.MainActivity}
 ```
 
-# Executndo os testes com Robot
+# Executando os testes com Robot
 
 1 - Execute o Appium Server:
 ```

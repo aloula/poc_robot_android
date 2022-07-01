@@ -7,8 +7,8 @@ Library         AppiumLibrary
 *** Variables ***
 ${REMOTE_URL}   http://localhost:4723/wd/hub
 ${platformName}   Android
-${appium:platformVersion}   11
-${appium:deviceName}    Pixel 4 API 30
+${appium:platformVersion}   13
+${appium:deviceName}    Pixel 4 API 33
 ${appium:automationName}    UiAutomator2
 ${appium:appPackage}    com.example.vamsi.login
 ${appium:appActivity}   com.example.vamsi.login.MainActivity 
