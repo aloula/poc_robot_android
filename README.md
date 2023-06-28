@@ -2,7 +2,7 @@
 
 Prova de Conceito (Poc) usando Robot Framework para automação de uma aplicação Android.
 
-[Vídeo do teste](poc_robot_framework.webm)
+[Vídeo](https://youtube.com/shorts/WjsmhzAuNKk) do teste rodando.
 
 
 ### Pré-requisitos:
