@@ -5,7 +5,7 @@ Library         AppiumLibrary
 
 
 *** Variables ***
-${REMOTE_URL}   http://localhost:4723/wd/hub
+${REMOTE_URL}   http://192.168.0.249:4723
 ${platformName}   Android
 ${appium:platformVersion}   13
 ${appium:deviceName}    Pixel 4 API 33

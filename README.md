@@ -2,6 +2,8 @@
 
 Prova de Conceito (Poc) usando Robot Framework para automação de uma aplicação Android.
 
+[Vídeo do teste](poc_robot_framework.webm)
+
 
 ### Pré-requisitos:
 
@@ -29,7 +31,7 @@ $ pip install Appium-Python-Client
 $ pip install robotframework
 $ robot --version
 $ pip install --upgrade robotframework-appiumlibrary
-Robot Framework 5.0 (Python 3.9.2 on linux)
+Robot Framework 6.1 (Python 3.10.6 on linux)
 ```
 
 
@@ -51,20 +53,19 @@ generic_x86_arm:/ $ dumpsys window | grep -E 'mCurrentFocus'
 
 # Executando os testes com Robot
 
-1 - Execute o Appium Server:
+1 - Ajuste as configurações de conexão do Appium no [arquivo](keywords/android.robot), caso necessário
+
+2 - Execute o Appium Server:
 ```
 $ ./run-appium.sh
 ```
 
-2 - Abra outro terminal para executar o Emulador:
-```
-$ ./run-emulador.sh
-```
+3 - Abra o emulador
 
-3 - Abra outro terminal e execute o teste:
+4 - Abra outro terminal e execute o teste:
 ```
 $ source .venv/bin/activate
 $ robot -d logs testes/*
 ```
 
-4 - Os relatórios são salvos na pasta "logs"  
+5 - Os relatórios são salvos na pasta "logs"  
